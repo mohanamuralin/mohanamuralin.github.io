@@ -1,0 +1,26 @@
+:root { color-scheme: light dark; --fg: #0B1F3A; --muted: #475569; --bg: #FFFFFF; --line: #E2E8F0; --accent: #0078D4; --card: #F8FAFC; }
+@media (prefers-color-scheme: dark) { :root { --fg: #EEF2F7; --muted: #9AA7B8; --bg: #0B1F3A; --line: #1E3A5F; --accent: #60B4F0; --card: #102A4C; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+header.site, main, footer.site { max-width: 760px; margin: 0 auto; padding-left: 20px; padding-right: 20px; }
+header.site { display: flex; align-items: center; justify-content: space-between; padding-top: 20px; padding-bottom: 20px; border-bottom: 3px solid var(--accent); }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 22px; color: var(--fg); text-decoration: none; }
+.brand img { border-radius: 8px; }
+nav a { font-weight: 600; }
+main { padding-top: 32px; padding-bottom: 56px; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0.3em 0; }
+h2 { font-size: 1.25rem; margin-top: 1.8em; }
+h3 { font-size: 1.05rem; margin-top: 1.4em; }
+a { color: var(--accent); }
+.muted { color: var(--muted); font-size: 0.92rem; display: block; }
+.hero { padding: 8px 0 8px; }
+.lockup { max-width: 100%; height: auto; }
+.app-icon { border-radius: 24px; }
+.tagline { font-size: 1.5rem; font-weight: 700; margin: 8px 0; }
+.lead { font-size: 1.1rem; color: var(--muted); }
+.app-card { display: flex; gap: 16px; align-items: center; padding: 16px; border: 1px solid var(--line); border-radius: 16px; background: var(--card); color: var(--fg); text-decoration: none; }
+.app-card img { border-radius: 16px; flex: none; }
+.app-card b { display: block; font-size: 1.1rem; }
+.features { padding-left: 20px; }
+.features li { margin: 8px 0; }
+footer.site { padding-top: 20px; padding-bottom: 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
